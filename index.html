@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DINAMIS</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index_columnX.css">
+    <link rel="stylesheet" href="index_columnY.css">
+    <link rel="stylesheet" href="index_columnZ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imágenes/DINAMIS PNG -CUT.png" alt="" width=200px>
+            </div>
+            <ul class="list">
+
+                <li><a class="alink" href="#">Baloncesto</a></li>
+                <li><a class="alink" href="secciones/futbol.html">Fútbol</a></li>
+                <li><a class="alink" href="#">Voleibol</a></li>
+            </ul>
+
+            <ul class="list2">
+                <input type="text" name="" id="">
+                <button>Buscar</button>
+                <div class="container">
+                    <button class="login-button">Iniciar sesión</button>
+                    <div class="login-popup">
+                        <div class="banner_login">
+                            <img src="imágenes/DINAMIS-CUT.png" alt="">
+                        </div>
+                      
+                      <form>
+                        <label id="usuario_title_fade" class="usuario_title_fade" for="">Nombre de usuario</label>
+                        <input type="text" id="name_user_type" class="highlight-input" placeholder="Nombre de Usuario" >
+                        <label  id="password_title_fade" class="password_title_fade" for="">Contraseña</label>
+                        <input type="password"  id="password_user_type" class="highlight-input" placeholder="Contraseña">
+                        
+                        <button id = "button1"type="submit">Iniciar sesión</button>
+                      </form>
+
+                      <button class = "cancel-popup">X</button>
+
+                      <div class="b_content">
+                        <div id = "link-account-helper"><a class ="recovery_pass"href="#">Si olvidaste la contraseña, puedes dar click aquí</a></div>
+                      </div>
+
+                        
+
+                      <div class="b_content">
+                        <div id = "register_text" class="last_text_popup">¿Aún no tienes una cuenta?</div>
+
+                        <div class="last_button_reg" onclick="redirectToPage()" >
+                            Registrarse
+                        </div>
+                      </div>
+
+                      
+                    </div>
+
+                    <div class="blur-effect">
+        
+                    </div>
+                </div>
+                <button id="register-button" class="login-button">Unirse</button>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div id="Contenedor1_Inicio">
+        <div id="SubContenedor1_Letras">
+            <div id=SubContenedor1_L_Título>
+                <h1>
+                    ARGENTINA CAMPEÓN DEL MUNDO
+                </h1>
+                <div id=SubContenedor1_L_Descripcion>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi amet mollitia, labore nam sit
+                        distinctio fugit. Perferendis dolore illo quas praesentium error qui nihil repellendus molestiae
+                        delectus ea, laborum eius!
+                    </p>
+                </div>
+            </div>
+
+            <div id="SubContenedor1_L_boton">
+                <button class="boton_pri">Ver más</button>
+            </div>
+
+
+
+        </div>
+        <div id="SubContenedor2_Imagen">
+
+        </div>
+    </div>
+    <!-- #region 
+    <div class="panel_de_partidos_vert">
+        
+        <div class="filtro_botones">
+            <select name="" id="">
+                <option value="">LaLiga</option>
+                <option value="">Bundesliga</option>
+                <option value="">NBA</option>
+                <option value="">Champions League</option>
+            </select>
+            
+            <select name="" id="">
+                <option value="">Hoy</option>
+                <option value="">Ayer</option>
+                <option value="">Hace 2 días</option>
+            </select>
+        </div>
+        
+        <div>
+            <button id="LEFT_btn">IZQ</button>
+        </div>
+        <div class="carrusel_de_partidos">
+            <div class="slide">
+                contenido 1
+            </div>
+
+            <div class="slide">
+                contenido 2
+            </div>
+
+            <div class="slide">
+                contenido 3
+            </div>
+
+            <div class="slide">
+                contenido 4
+            </div>
+        </div>
+        <div>
+            <button id="RIGHT_btn">DER</button>
+        </div>
+
+    </div>
+-->
+
+    <div class="panel_de_partido_hor">
+        <div class="control_panel">
+            <div class="carrousel_horizontal">
+
+            </div>
+        </div>
+    </div>
+    <div class="index_home">
+        <div class="columnX">
+            <div id="cuadro_registro_inicio">
+                <div class="promocion1">
+                    <h2>¡Personaliza tu contenido!</h2>
+                </div>
+
+                <div class="promocion1_btn">
+
+                    <a class="prom1_btn1" href="#">Regístrate</a></button></li>
+                    <a class="prom1_btn2" href="#">Inicia Sesión</a></button></li>
+
+                </div>
+
+            </div>
+
+            <div id="cuadro_recomendaciones">
+                <div >
+                    <h2 class ="titulo">Recomendamos</h2>
+                </div>
+                <div class="content">
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class= "t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+
+                    <hr class="border_opt">
+
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class= "t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+
+                    <hr class="border_opt">
+
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class= "t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+
+                    <hr class="border_opt">
+
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class= "t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+
+                    <hr class="border_opt">
+
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class= "t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- #region -->
+
+            <div id="cuadro_contacto">
+                <div>
+                    <h2 class ="titulo">Síguenos</h2>
+                </div>
+
+                <div class="content">
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class="t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+
+                    <hr class="border_opt">
+
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class="t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+
+                    <hr class="border_opt">
+
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class="t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+
+                    <hr class="border_opt">
+
+                    <div class="hueco">
+                        <div class="hueco_imagen">
+                            <img class="t_imagen" src="Imágenes/Rojo.avif" width="20px" alt="">
+                        </div>
+                        <div class="hueco_nombre">
+                            <a class="t_nombre" href="#">Barcelona</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="columnY">
+            <div id = "noticia_tipoA_F_1">
+                <div class="tabla_del_partido_F">
+                    <div class="equipo">
+                        <div class="escudo">
+                            <img src="imágenes/Equipos/argentina.png" alt="">
+                        </div>
+
+                        <div class="nombre_equipo">
+                            <h3>Argentina</h3>
+                        </div>
+                    </div>
+
+                    <div class="puntaje">
+
+                        <div class="puntos">
+                            <h3> 3 - 3</h3>
+                        </div>
+
+                        <div class="info_extra">
+                            <h4>Penales (4-3)</h4>
+                        </div>
+                    </div>
+
+                    <div class="equipo">
+                        <div class="escudo">
+                            <img src="imágenes/Equipos/france.png" alt="">
+                        </div>
+
+                        <div class="nombre_equipo">
+                            <h3>Francia</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="border_pts">
+                    <hr class="border_opt">
+                </div>
+                
+
+                <div class="nueva">
+                    <div class="imagen_noticia_A_F">
+                        
+                    </div>
+
+                    <div class="title_new">
+                        <div class="title_new_detailed">
+                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores, similique veniam tempore ullam quasi placeat eum a</h3>
+                        </div>
+
+                        <div class="time_uploaded">
+                            hace 2 horas
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="nueva">
+                    <div class="imagen_noticia_A_F">
+                        
+                    </div>
+
+                    <div class="title_new">
+                        <div class="title_new_detailed">
+                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores, similique veniam tempore ullam quasi placeat eum a</h3>
+                        </div>
+
+                        <div class="time_uploaded">
+                            hace 2 horas
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="noticia2">
+                <div class="nueva2">
+                    <div class="imagen_noticia_A_F2">
+                        
+                    </div>
+    
+                    <div class="title_new">
+                        <div class="title_new_detailed">
+                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores, similique veniam tempore ullam quasi placeat eum a</h3>
+                        </div>
+    
+                        <div class="time_uploaded">
+                            hace 2 horas
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="noticia2">
+                <div class="nueva2">
+                    <div class="imagen_noticia_A_F2">
+                        
+                    </div>
+    
+                    <div class="title_new">
+                        <div class="title_new_detailed">
+                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores, similique veniam tempore ullam quasi placeat eum a</h3>
+                        </div>
+    
+                        <div class="time_uploaded">
+                            hace 2 horas
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+
+
+            <div class="noticia3">
+
+                <div class="equipo_perfil">
+                    <div class="equipo_foto_perfil">
+                        <img src="imágenes/Equipos/Real_Madrid_CF.svg.png" width = 50% height= 70% alt=""> 
+                    </div>
+                    <div class="info_equipo_3">
+                        <div class="nombre_perfil">
+                            Real Madrid
+                        </div>
+                        <div class="tipo_deporte_perfil">
+                            Fútbol
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="nueva3">
+                    <div class="imagen_noticia_A_F3">
+                        
+                    </div>
+    
+                    <div class="title_new">
+                        <div class="title_new_detailed">
+                            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores, similique veniam tempore ullam quasi placeat eum a</h3>
+                        </div>
+    
+                        <div class="time_uploaded">
+                            hace 2 horas
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="columnZ">
+            <div id="cuadro_titulares">
+                <div class = "hueco_nombre_z" >
+                    <h2 class="titulo_z">Titulares</h2>
+                </div>
+                <div class="hueco_titulos">
+                    <hr class="border_opt">
+                </div>
+                
+
+                <div class="hueco_titulos">
+                    <a class="hv_news" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dignissimos minima velit perferendis amet consectetur harum assumenda, quae id officia expedita eius provident reprehenderit soluta vitae? 
+                        Id eum pariatur itaque.</a>
+                </div>
+
+                <div class="hueco_titulos">
+                    <a class="hv_news" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dignissimos minima velit perferendis amet consectetur harum assumenda, quae id officia expedita eius provident reprehenderit soluta vitae? 
+                        Id eum pariatur itaque.</a>
+                </div>
+
+                <div class="hueco_titulos">
+                    <a class="hv_news" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dignissimos minima velit perferendis amet consectetur harum assumenda, quae id officia expedita eius provident reprehenderit soluta vitae? 
+                        Id eum pariatur itaque.</a>
+                </div>
+
+                <div class="hueco_titulos">
+                    <a class="hv_news" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dignissimos minima velit perferendis amet consectetur harum assumenda, quae id officia expedita eius provident reprehenderit soluta vitae? 
+                        Id eum pariatur itaque.</a>
+                </div>
+                
+                <div class="hueco_titulos">
+                    <a class="hv_news" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dignissimos minima velit perferendis amet consectetur harum assumenda, quae id officia expedita eius provident reprehenderit soluta vitae? 
+                        Id eum pariatur itaque.</a>
+                </div>
+
+                
+              
+            </div>
+
+            <div id="por_si_no_lo_viste">
+                <div class="hueco_nombre_z">
+                    <h2>Por si no lo viste</h2>
+                </div>
+                <div class="hueco_titulos">
+                    <hr class="border_opt">
+                </div>
+
+                <div class="link_to_video">
+                    <div class="hueco_video_image">
+                        <img class="video_image" src="imágenes/kaka_milan.jpg" alt="" width="250px">
+                        <img class = "play_btn" src="imágenes/play_btn.png" alt="">
+                        <div class="time">
+                            2:21
+                        </div>
+                    </div>
+
+                    <div class="title_video">
+                        <a class = "title_video_detail" href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, molestiae aliq</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="lo_mejor_de_dinamis">
+                <div class="hueco_video_completo">
+                    <div class = "hueco_nombre_z">
+                        <h2>Lo mejor de DINAMIS</h2>
+                    </div>
+
+                    <div class = "hueco_titulos">
+                        <hr class="border_opt">
+                    </div>
+                    
+                    
+                    <div class="link_to_video">
+                        <div class="hueco_video_image">
+                            <img class = "play_btn" src="imágenes/play_btn.png" alt="">
+                            <div class="time"> 5:45 </div>
+                        </div>
+
+                        <div class="title_video">
+                            <a class="title_video_detail" href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, molestiae aliq</a> 
+                        </div>
+                    </div>
+
+                    <div class="link_to_video">
+                        <div class="hueco_video_image">
+                            <img class = "play_btn" src="imágenes/play_btn.png" alt="">
+                            <div class="time"> 5:45 </div>
+                        </div>
+
+                        <div class="title_video">
+                            <a class="title_video_detail" href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, molestiae aliq</a> 
+                        </div>
+                    </div>
+
+                    <div class="link_to_video">
+                        <div class="hueco_video_image">
+                            <img class = "play_btn" src="imágenes/play_btn.png" alt="">
+                            <div class="time"> 5:45 </div>
+                        </div>
+
+                        <div class="title_video">
+                            <a class="title_video_detail" href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, molestiae aliq</a> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class = "footer_axiliar">
+            <div class = "fp_1">
+                <div class="bloq1">
+                    <div class = "info_empresa">
+                        <div class="texto_f">
+                            DINAMIS
+                        </div>
+        
+                        <div class="frase_f">
+                            La mejor plataforma de noticias de grandes ligas
+                        </div>
+                    </div>
+        
+                    <div class = "contacto_row">
+                        <div>
+                            <img src="imágenes/facebook.png" alt="">
+                            <img src="imágenes/instagram.png" alt="">
+                            <img src="imágenes/twitter.png" alt="">
+                            <img src="imágenes/youtube.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="recomendaciones_f">
+                    <div class="texto_f">
+                        Recomendamos
+                    </div>
+        
+                    <div class="equipos_ligas">
+                        <img src="imágenes/Bundesliga_logo_(2017).png" alt="">
+                        <img src="imágenes/Equipos/barca.png" alt="">
+                        <img src="imágenes/Equipos/laliga.png" alt="">
+                        <img src="imágenes/Equipos/Serie_A_logo_2022.png" alt="">
+                        <img src="imágenes/Equipos/Real_Madrid_CF.svg.png" alt="">
+                    </div>
+                </div>
+        
+                <div class="fp_2">
+                    <div>
+                        Acerca de nosotros
+                    </div>
+        
+                    <div>
+                        Trabaja con nosotros
+                    </div>
+                </div>
+    
+            </div>
+
+            <div class="mas_detalles">
+                <div>
+                    Políticas de privacidad
+                </div>
+    
+                <div>
+                    Términos y condiciones
+                </div>
+    
+                <div>
+                    Licencias
+                </div>
+            </div>
+
+            <div class="extra">
+                DINAMIS 2023
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- #region 
+    <div id="Paquete_de_3_columnas">
+
+        <div id = Inicio_Columna1>
+            
+            <div id="Cuadro_registro_inicio">
+                <h2>
+                    ¡Personaliza tu contenido!
+                </h2>
+                <ul>
+                    <ul><a href="#">Regístrate</a></ul>
+                    <ul><a href="#">Inicia Sesión</a></ul>
+                </ul>
+            </div>
+
+           
+
+           
+
+            
+
+            
+         
+
+            
+            
+           
+        </div>
+        </div>
+
+        <div id = Inicio_Columna2>
+           
+        </div>
+
+        <div id = Inicio_Columna3>
+           
+    </div>
+
+    <div id="boton_auxiliar_1">
+        <button> Ir al comienzo </button>
+    </div>
+    
+
+    <footer>
+        <div id = footer_container>
+
+            <div id="Parte1_footer">
+                <h1>DINAMIS</h1>
+                <div id="redes_foot">
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">YouTube</a></li>
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">Twitter</a></li>
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">Instagram</a></li>
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">Facebook</a></li>
+                </div>
+               
+            </div>
+    
+            <div id="Parte2_footer">
+                <h1>Recomendamos</h1>
+                <div id="recomendaciones_foot">
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">LaLiga</a></li>
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">Barcelona</a></li>
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">NBA</a></li>
+                    <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">MLS</a></li>
+                   <li><img src="Imágenes/Rojo.avif" width="20px" alt=""><a href="#">Bundesligue</a></li>
+                </div>
+                
+            </div>
+    
+            <div id="Parte3_footer">
+    
+                <h2>
+                    Acerca de nosotros
+                </h2>
+                <br>
+                <h2>Trabaja con nosotros</h2>
+            </div>
+
+        </div>
+        
+
+        
+    </footer>
+    -->
+    <script src="panel_de_partidos.js"></script>
+    <script src = "login.js"></script>
+</body>
+
+</html>
